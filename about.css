@@ -1,0 +1,470 @@
+/* ================================
+   RESET
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: #08111f;
+    color: white;
+    min-height: 100vh;
+}
+
+
+/* ================================
+   NAVBAR
+================================ */
+
+header {
+    width: 100%;
+}
+
+.navbar {
+    width: 90%;
+    max-width: 1250px;
+    height: 90px;
+
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* ================================
+   LOGO
+================================ */
+
+.logo {
+    text-decoration: none;
+
+    font-size: 24px;
+    font-weight: 800;
+
+    color: white;
+}
+
+.logo span {
+    color: #8b5cf6;
+}
+
+
+/* ================================
+   NAVIGATION
+================================ */
+
+nav {
+    display: flex;
+
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #aab4c3;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    transition: 0.3s;
+
+}
+
+nav a:hover,
+nav a.active {
+    color: white;
+}
+
+
+/* ================================
+   RESUME BUTTON
+================================ */
+
+.resume-btn {
+   text-decoration: none;
+
+    padding: 11px 22px;
+
+    border: 1px solid #8b5cf6;
+    border-radius: 25px;
+
+    color: white;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.resume-btn:hover {
+    background: #8b5cf6;
+
+    transform: translateY(-2px);
+}
+
+
+/* ================================
+   ABOUT PAGE
+================================ */
+
+.about-page {
+    width: 92%;
+    max-width: 1500px;
+    margin: auto;
+    padding: 35px 0 80px;
+}
+
+
+/* ================================
+   SECTION LABEL
+================================ */
+
+.section-label {
+    color: #8b5cf6;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 18px;
+}
+
+
+/* ================================
+   ABOUT INTRO
+================================ */
+
+.about-intro {
+    max-width: 100%;
+    margin-bottom: 70px;
+    max-width: none;
+}
+
+
+/* MAIN TITLE */
+
+.about-intro h1 {
+    font-size: clamp(42px, 6vw, 70px);
+    line-height: 1;
+    font-weight: 600;
+    letter-spacing: -3px;
+}
+
+/* SUBTITLE */
+
+.section-subtitle {
+    color: #8b5cf6;
+
+    font-size: 17px;
+
+   
+
+    max-width: 450px;
+
+    margin-bottom: 55px;
+}
+
+
+/* ================================
+   ABOUT DESCRIPTION
+================================ */
+
+.about-description {
+    width: 100%;
+    max-width: none;
+    border-left: 1px solid #8b5cf6;
+    padding-left: 30px;
+}
+
+.about-description p {
+    color: #9da9ba;
+    max-width: none;
+    font-size: 17px;
+    line-height: 1.6;
+
+    margin-bottom: 22px;
+}
+
+.about-description p:last-child {
+    margin-bottom: 0;
+}
+
+.about-description strong {
+    color: #8b5cf6;
+
+    font-weight: 600;
+}
+
+
+/* ================================
+   EDUCATION
+================================ */
+
+.education {
+
+    padding-top: 0;
+    margin-top: -30px;
+}
+
+
+
+/* EDUCATION HEADING */
+
+.education-heading {
+    margin-bottom: 10px;
+}
+
+.education-heading h2 {
+    font-size: clamp(36px, 5vw, 55px);
+    line-height: 1;
+    font-weight: 600;
+    letter-spacing: -3px;
+}
+
+
+/* ================================
+   EDUCATION ITEM
+================================ */
+
+.education-item {
+   
+    padding: 18px 0;
+    transition: 0.3s ease;
+
+}
+
+.education-item:hover {
+    padding-left: 10px;
+}
+
+
+/* NUMBER */
+
+.education-number {
+    font-size: 13px;
+
+    font-weight: 600;
+
+    color: #777;
+
+    padding-top: 5px;
+}
+
+
+/* ================================
+   EDUCATION CONTENT
+================================ */
+
+.education-content h3 {
+    font-size: 24px;
+
+    line-height: 1.3;
+
+    font-weight: 600;
+
+    color: #8b5cf6;
+
+    margin-bottom: 12px;
+}
+
+
+/* INSTITUTION */
+
+.institution {
+    color: #9da9ba;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    margin-bottom: 20px;
+}
+
+
+/* DETAILS */
+
+.education-details {
+    display: flex;
+
+    gap: 30px;
+
+    color: #9da9ba;
+
+    font-size: 13px;
+}
+
+.education-details strong {
+    color: #8b5cf6;
+
+    font-weight: 600;
+}
+
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 1000px) {
+
+    nav {
+        gap: 18px;
+    }
+
+    .about-page {
+        width: 88%;
+    }
+
+    .about-intro h1 {
+        font-size: 75px;
+    }
+}
+
+
+/* ================================
+   TABLET / MOBILE
+================================ */
+
+@media (max-width: 800px) {
+
+    .navbar {
+        width: 88%;
+
+        height: 75px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .about-page {
+        width: 88%;
+
+        padding-top: 60px;
+    }
+
+    .about-intro {
+        margin-bottom: 70px;
+    }
+
+    .about-intro h1 {
+        font-size: 65px;
+
+        letter-spacing: -4px;
+    }
+
+    .section-subtitle {
+        font-size: 15px;
+    }
+
+    .about-description {
+        padding-left: 20px;
+    }
+
+    .about-description p {
+        font-size: 15px;
+    }
+
+    .education-item {
+        grid-template-columns: 50px 1fr;
+
+        gap: 15px;
+    }
+
+    .education-content h3 {
+        font-size: 20px;
+    }
+
+}
+
+
+/* ================================
+   SMALL MOBILE
+================================ */
+
+@media (max-width: 500px) {
+
+    .logo {
+        font-size: 17px;
+    }
+
+    .resume-btn {
+        padding: 8px 15px;
+
+        font-size: 10px;
+    }
+
+    .about-page {
+        width: 88%;
+
+        padding-top: 50px;
+    }
+
+    .about-intro h1 {
+        font-size: 48px;
+
+        letter-spacing: -3px;
+    }
+
+    .section-label {
+        font-size: 10px;
+
+        letter-spacing: 2px;
+    }
+
+    .section-subtitle {
+        font-size: 14px;
+
+        margin-bottom: 40px;
+    }
+
+    .about-description {
+        padding-left: 15px;
+    }
+
+    .about-description p {
+        font-size: 14px;
+    }
+
+    .education {
+        padding-top: 45px;
+    }
+
+    .education-heading h2 {
+        font-size: 45px;
+
+        letter-spacing: -3px;
+    }
+
+    .education-item {
+        grid-template-columns: 40px 1fr;
+
+        padding: 28px 0;
+    }
+
+    .education-content h3 {
+        font-size: 18px;
+    }
+
+    .institution {
+        font-size: 14px;
+    }
+
+    .education-details {
+        flex-direction: column;
+
+        gap: 6px;
+    }
+
+}

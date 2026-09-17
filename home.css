@@ -1,0 +1,646 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: #08111f;
+    color: white;
+    min-height: 100vh;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+header {
+    width: 100%;
+}
+
+.navbar {
+    width: 90%;
+    max-width: 1250px;
+    height: 90px;
+
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* LOGO */
+
+.logo {
+    text-decoration: none;
+
+    font-size: 24px;
+    font-weight: 800;
+
+    color: white;
+}
+
+.logo span {
+    color: #8b5cf6;
+}
+
+
+/* NAV LINKS */
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+
+    color: #aab4c3;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+    color: white;
+}
+
+
+/* RESUME BUTTON */
+
+.resume-btn {
+    text-decoration: none;
+
+    padding: 11px 22px;
+
+    border: 1px solid #8b5cf6;
+    border-radius: 25px;
+
+    color: white;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.resume-btn:hover {
+    background: #8b5cf6;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+    width: 90%;
+    max-width: 1250px;
+
+    min-height: 560px;
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* =========================
+   HERO CONTENT
+========================= */
+
+.hero-content {
+    width: 55%;
+}
+
+
+/* HELLO */
+
+.hello {
+    color: #8b5cf6;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 15px;
+}
+
+
+/* MAIN HEADING */
+
+.hero-content h1 {
+    font-size: clamp(35px, 4vw, 55px);
+
+    line-height: 1.05;
+
+    font-weight: 800;
+
+    margin-bottom: 20px;
+
+    letter-spacing: -2px;
+}
+
+
+/* SECOND LINE */
+
+.hero-content h1 span {
+    display: block;
+
+    color: #d8dee8;
+}
+
+
+/* =========================
+   ANIMATED ROLE
+========================= */
+
+.roles {
+    height: 35px;
+
+    font-size: 20px;
+
+    color: #8b5cf6;
+
+    font-weight: 600;
+
+    display: flex;
+    align-items: center;
+}
+
+#role {
+    transition: opacity 0.3s ease;
+}
+
+
+/* =========================
+   DESCRIPTION
+========================= */
+
+.description {
+    max-width: 550px;
+
+    color: #9da9ba;
+
+    line-height: 1.8;
+
+    font-size: 15px;
+
+    margin: 20px 0 30px;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.hero-buttons {
+    display: flex;
+
+    gap: 15px;
+}
+
+
+/* COMMON BUTTON */
+
+.primary-btn,
+.secondary-btn {
+    text-decoration: none;
+
+    padding: 14px 24px;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+
+/* PRIMARY */
+
+.primary-btn {
+    background: #8b5cf6;
+
+    color: white;
+}
+
+.primary-btn:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 10px 30px
+        rgba(139, 92, 246, 0.3);
+}
+
+.primary-btn span {
+    margin-left: 8px;
+}
+
+
+/* SECONDARY */
+
+.secondary-btn {
+    border: 1px solid #344155;
+
+    color: white;
+}
+
+.secondary-btn:hover {
+    border-color: #8b5cf6;
+
+    transform: translateY(-4px);
+}
+
+
+/* =========================
+   PROFILE IMAGE
+========================= */
+
+.hero-image {
+    width: 40%;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* IMAGE CIRCLE */
+
+.image-circle {
+    width: 360px;
+    height: 360px;
+
+    border-radius: 50%;
+
+    padding: 8px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #8b5cf6,
+            #4f46e5,
+            #06b6d4
+        );
+
+    animation:
+        float 5s ease-in-out infinite;
+}
+
+
+/* IMAGE */
+
+.image-circle img {
+    width: 100%;
+    height: 100%;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    border: 8px solid #08111f;
+}
+
+
+/* =========================
+   FLOATING CARDS
+========================= */
+
+.floating-card {
+    position: absolute;
+
+    padding: 12px 18px;
+
+    background: #111d2e;
+
+    border: 1px solid #26364d;
+
+    border-radius: 10px;
+
+    backdrop-filter: blur(10px);
+
+    box-shadow:
+        0 10px 30px
+        rgba(0, 0, 0, 0.25);
+
+    transition: 0.3s;
+}
+
+
+/* HOVER */
+
+.floating-card:hover {
+    transform: scale(1.08);
+
+    border-color: #8b5cf6;
+}
+
+
+/* ICON */
+
+.floating-card span {
+    color: #8b5cf6;
+
+    font-size: 18px;
+
+    font-weight: 800;
+}
+
+
+/* TEXT */
+
+.floating-card p {
+    color: #aab4c3;
+
+    font-size: 11px;
+
+    margin-top: 4px;
+}
+
+
+/* CARD POSITIONS */
+
+.card-one {
+    top: 40px;
+    left: 0;
+}
+
+.card-two {
+    right: -20px;
+    top: 150px;
+}
+
+.card-three {
+    bottom: 40px;
+    left: 20px;
+}
+
+
+/* =========================
+   HIGHLIGHTS
+========================= */
+
+.highlights {
+    width: 90%;
+    max-width: 1250px;
+
+    margin: 20px auto 60px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+
+/* CARD */
+
+.highlight-card {
+    padding: 22px;
+
+    background: #0d1929;
+
+    border: 1px solid #1e2d42;
+
+    border-radius: 12px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    transition: 0.3s;
+}
+
+
+/* HOVER */
+
+.highlight-card:hover {
+    transform: translateY(-8px);
+
+    border-color: #8b5cf6;
+
+    background: #101e32;
+}
+
+
+/* ICON */
+
+.highlight-card .icon {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    background: #1b1733;
+
+    color: #8b5cf6;
+
+    font-weight: 800;
+}
+
+
+/* TITLE */
+
+.highlight-card h3 {
+    font-size: 16px;
+
+    margin-bottom: 5px;
+}
+
+
+/* DESCRIPTION */
+
+.highlight-card p {
+    color: #8492a6;
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   FLOATING ANIMATION
+========================= */
+
+@keyframes float {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 1000px) {
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .hero-content h1 {
+        font-size: 52px;
+    }
+
+    .image-circle {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+
+@media (max-width: 800px) {
+
+    /* NAVBAR */
+
+    .nav-links {
+        display: none;
+    }
+
+    .navbar {
+        height: 75px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        flex-direction: column;
+
+        text-align: center;
+
+        padding-top: 60px;
+    }
+
+
+    .hero-content {
+        width: 100%;
+    }
+
+
+    .hero-content h1 {
+        font-size: 48px;
+    }
+
+
+    .description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    /* BUTTONS */
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+
+    /* IMAGE */
+
+    .hero-image {
+        width: 100%;
+
+        margin-top: 60px;
+
+        margin-bottom: 50px;
+    }
+
+
+    .image-circle {
+        width: 280px;
+        height: 280px;
+    }
+
+
+    /* HIDE FLOATING CARDS */
+
+    .floating-card {
+        display: none;
+    }
+
+
+    /* HIGHLIGHTS */
+
+    .highlights {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .hero-content h1 {
+        font-size: 40px;
+    }
+
+    .hero-content h2 {
+        font-size: 20px;
+    }
+
+    .roles {
+        justify-content: center;
+
+        font-size: 17px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+        width: 220px;
+    }
+
+    .image-circle {
+        width: 240px;
+        height: 240px;
+    }
+}
